@@ -4,9 +4,14 @@
 <html>
 <head>
 <meta charset="UTF-8">
+<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+<link rel="stylesheet" href="CSS/style.css">
 <title>Edit Computer</title>
 </head>
 <body>
+
+<div class="card">
+  <div class="container">
 <h1>${computer.id}</h1>
 <form action="editedComputer.do" method="post">
 		<input type="hidden" name = "id" value="${computer.id}">
@@ -42,5 +47,9 @@
 		</select><br>
 		<input type="submit" value="Submit">
 </form>
+    
+  </div>
+</div>
+
 </body>
 </html>
